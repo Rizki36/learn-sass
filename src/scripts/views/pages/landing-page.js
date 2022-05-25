@@ -1,9 +1,12 @@
 import pageRender from '../../utils/page-render';
+import '../component/target-landing';
 
 const LandingPage = {
   async render() {
     pageRender('landing');
-    return '<h1>Halaman Landing Page <i class="fa-solid fa-arrow-down"></i></h1>';
+    return `
+      <target-landing></target-landing>
+    `;
   },
 
   async afterRender() {
